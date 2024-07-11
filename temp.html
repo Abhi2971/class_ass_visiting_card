@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .business-card {
+            width: 600px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-front, .card-back {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header, .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .left, .header .right {
+            flex: 1;
+        }
+
+        .header .right {
+            text-align: right;
+        }
+
+        .middle {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .footer .left, .footer .right {
+            flex: 1;
+        }
+
+        .footer .right {
+            text-align: right;
+        }
+
+        .card-back .logo {
+            text-align: center;
+        }
+
+        .card-back .footer {
+            text-align: center;
+            color: #0078d7;
+            font-weight: bold;
+        }
+
+        .blue-bar {
+            background-color: #0078d7;
+            height: 10px;
+            width: 100%;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="card-front">
+            <div class="header">
+                <div class="left">
+                    <h2>MICHAL JOHNS</h2>
+                    <p>Solution Manager</p>
+                </div>
+                <div class="right">
+                    <img src="qrcode.png" alt="QR Code">
+                </div>
+            </div>
+            <div class="middle">
+                <h1>CODE PRO</h1>
+                <p>your tag slogan</p>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <p>123. 456 78907890</p>
+                    <p>123. 456 78907890</p>
+                    <p>hello@jasonsmith.com</p>
+                    <p>email@jasonsmith.com</p>
+                </div>
+                <div class="right">
+                    <p>address here, Suite#1</p>
+                    <p>New Avenue, NY-012</p>
+                </div>
+            </div>
+        </div>
+        <div class="blue-bar"></div>
+        <div class="card-back">
+            <div class="logo">
+                <h1>CODE PRO</h1>
+                <p>your tag slogan</p>
+            </div>
+            <div class="footer">
+                <p>// VISUAL ART STUDIO //</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
